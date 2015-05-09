@@ -5,3 +5,4 @@ gem "json"
 gem 'sinatra'
 gem 'color'
 gem 'byebug'
+gem 'thin'
