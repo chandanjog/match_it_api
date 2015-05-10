@@ -8,6 +8,7 @@ get '/matching_color/:color' do
   Sphereio.product_with_matching_color(params['color']).to_json
 end
 
+#curl -X POST https://dry-sea-4593.herokuapp.com/make_payment/123 -d "name=shirt&price=0.23&currency=EUR&quantity=1"
 #curl -X POST http://localhost:9292/make_payment/123 -d "name=shirt&price=40.23&currency=EUR&quantity=1"
 post '/make_payment/:product_id' do
   content_type :json
